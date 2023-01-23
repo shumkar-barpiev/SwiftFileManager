@@ -11,7 +11,7 @@
         <!--Switch View Controller-->
         <scene sceneID="cU6-9j-5Yh">
             <objects>
-                <viewController id="LdL-ih-M1G" customClass="SwitchViewController" customModule="ReadWriteTextFile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwitchViewController" id="LdL-ih-M1G" customClass="SwitchViewController" customModule="ReadWriteTextFile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Igw-Ng-sLa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,20 +73,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYV-MX-4o7">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYV-MX-4o7" customClass="SecondViewNavBar" customModule="ReadWriteTextFile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="vQ4-q1-jJA">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="i2K-CC-jCA">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Sg-p4-qjC">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="SGS-B1-PsS">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7pW-tT-HUA">
                                                 <rect key="frame" x="20" y="5" width="92" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.right" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
                                             </button>
                                             <connections>
-                                                <action selector="logoutButtonAction:" destination="jaS-Iv-ewP" id="Mrh-cn-nQQ"/>
+                                                <action selector="tapLogout:" destination="jaS-Iv-ewP" id="uqi-FT-BCY"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -109,11 +109,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rC9-35-guk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862.31884057971024" y="84.375"/>
+            <point key="canvasLocation" x="812" y="84"/>
         </scene>
     </scenes>
     <resources>
-        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

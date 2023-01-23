@@ -15,6 +15,7 @@
 		CE537980297D1746007A5329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE53797E297D1746007A5329 /* LaunchScreen.storyboard */; };
 		CE537988297D1821007A5329 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537987297D1821007A5329 /* SwitchViewController.swift */; };
 		CE53798A297D183C007A5329 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537989297D183C007A5329 /* SecondViewController.swift */; };
+		CE820965297E725A00874BCF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE820964297E725A00874BCF /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CE537981297D1746007A5329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE537987297D1821007A5329 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		CE537989297D183C007A5329 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CE820964297E725A00874BCF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CE537981297D1746007A5329 /* Info.plist */,
 				CE537987297D1821007A5329 /* SwitchViewController.swift */,
 				CE537989297D183C007A5329 /* SecondViewController.swift */,
+				CE820964297E725A00874BCF /* UserModel.swift */,
 			);
 			path = ReadWriteTextFile;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE537978297D1743007A5329 /* ViewController.swift in Sources */,
+				CE820965297E725A00874BCF /* UserModel.swift in Sources */,
 				CE537974297D1743007A5329 /* AppDelegate.swift in Sources */,
 				CE537988297D1821007A5329 /* SwitchViewController.swift in Sources */,
 				CE53798A297D183C007A5329 /* SecondViewController.swift in Sources */,

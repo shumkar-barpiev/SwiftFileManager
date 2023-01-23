@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         print(url.path)
         
         let newFolder = url.appendingPathComponent("BitirmeTezi").appendingPathComponent("Sessions")
-        let sessionFileDirectory = url.appendingPathComponent("BitirmeTezi").appendingPathComponent("Sessions").appendingPathComponent("session.txt")
+        let sessionFileDirectory = newFolder.appendingPathComponent("session.txt")
         
         print(directoryExistsAtPath(sessionFileDirectory.path))
         
@@ -34,6 +34,16 @@ class ViewController: UIViewController {
                 do {
                     let text2 = try String(contentsOf: sessionFileDirectory, encoding: .utf8)
                     print(text2)
+                    
+                    let user = User(id: Int(userIdTextField.text ?? "0") ?? 0 , userName: usernameTextField.text ?? "no name")
+                    
+                    let controller = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+                    controller.manager = manager
+                    controller.sessionFileDirectory = sessionFileDirectory
+                    controller.user = user
+                    
+                    controller.modalPresentationStyle = .fullScreen
+                    present(controller, animated: true, completion: nil)
                 }
                 catch {
                     print(error)
